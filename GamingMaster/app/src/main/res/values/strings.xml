@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Gaming Master</string>
+    <string name="new_user_creat_account">New User? <b>Create Account</b></string>
+</resources>

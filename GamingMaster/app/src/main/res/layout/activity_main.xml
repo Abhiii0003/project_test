@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/designbackgame1"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardCornerRadius="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/gaming"
+            android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardLay"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#091E91"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginVertical="30dp"
+               />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:layout_marginHorizontal="20sp"
+                app:prefixText="+91"
+                app:startIconDrawable="@drawable/baseline_local_phone_24"
+                android:background="#F6F0F0"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnVerify"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginVertical="10dp"
+                app:cornerRadius="10dp"
+                android:backgroundTint="#2196F3"
+                android:layout_gravity="center"
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:hint="Google Login" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_user_creat_account"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:layout_marginVertical="20sp"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
